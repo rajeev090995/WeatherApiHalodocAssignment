@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Weather Api">
+    <parameter name="baseURI" value="http://www.metaweather.com/api/location"></parameter>
+    <test name="getweatgerdetailsapi">
+        <classes>
+            <class name="com.halodoc.testWeatherApi.weatherApi">
+                <methods>
+                    <parameter name="basePath"  value="/search"/>
+                    <parameter name="city"  value="bangalore"/>
+                    <parameter name="predictability"  value="75"/>
+                    <include name="getWeatherForecast"></include>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+</suite>
+
+
