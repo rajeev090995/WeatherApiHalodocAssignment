@@ -10,15 +10,6 @@ import static io.restassured.RestAssured.given;
 
 public class BaseTest {
 
-    /**
-     * Written By : Pranshu Jain
-     *
-     * This is a base class for API Automation, this class can be used to quickly automate any API's using @test
-     * annotation in the child class.
-     *
-     * This Base class uses Restassured, TestNG libraries.
-     *
-     */
 
     public static Logger logger = LoggerFactory.getLogger(BaseTest.class);
     public static RequestSpecification requestSpecification = given();
